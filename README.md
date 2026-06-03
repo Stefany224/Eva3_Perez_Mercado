@@ -33,4 +33,6 @@ npm run dev
 http://localhost:5173
 \`\`\`
 
+## API — Mock Server Postman
 
+URL Base: `https://6fa72639-ed55-4974-9431-00dbed557a29.mock.pstmn.io`

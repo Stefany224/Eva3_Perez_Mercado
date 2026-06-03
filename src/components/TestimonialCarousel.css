@@ -1,0 +1,95 @@
+.carrusel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.carrusel-btn {
+  background-color: var(--azul-principal);
+  color: var(--blanco);
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carrusel-btn:hover {
+  background-color: var(--azul-oscuro);
+}
+
+.carrusel-tarjeta {
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  min-height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.carrusel-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.carrusel-opinion {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--blanco);
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.carrusel-nombre {
+  color: var(--amarillo);
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.carrusel-empresa {
+  font-weight: bold;
+  color: var(--blanco);
+  margin-bottom: 0.2rem;
+}
+
+.carrusel-comuna {
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.carrusel-puntos {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.punto {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.punto.activo {
+  background-color: var(--azul-principal);
+}

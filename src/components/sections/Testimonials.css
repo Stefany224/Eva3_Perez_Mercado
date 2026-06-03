@@ -1,0 +1,22 @@
+.testimonials {
+  padding: 5rem 2rem;
+  background-color: var(--gris-claro);
+}
+
+.testimonials-contenido {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  color: var(--azul-principal);
+  margin-bottom: 1rem;
+}
+
+.testimonials p {
+  color: var(--blanco);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}

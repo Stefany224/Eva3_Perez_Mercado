@@ -1,0 +1,138 @@
+:root {
+  --azul-principal: #426a98;
+  --azul-oscuro: #103c6a;
+  --amarillo: #f5a623;
+  --blanco: #ffffff;
+  --gris-claro: #f4f4f4;
+  --gris-texto: #555555;
+  --font-principal: 'Segoe UI', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-principal);
+  color: var(--gris-texto);
+  background-color: var(--blanco);
+}
+
+.navbar {
+  transition: transform 0.3s ease;
+}
+
+.navbar-visible {
+  transform: translateY(0);
+}
+
+.navbar-oculta {
+  transform: translateY(-100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* Hero */
+  .hero-contenido h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-contenido p {
+    font-size: 1rem;
+  }
+
+  /* Nosotros */
+  .about-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  /* Servicios */
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* Carrusel */
+  .carrusel {
+    flex-direction: column;
+  }
+
+  .carrusel-btn {
+    display: none;
+  }
+
+  .carrusel-tarjeta {
+    max-width: 100%;
+  }
+
+  /* Footer */
+  .footer-contenido {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+   /* Testimonios */
+  .testimonials h2 {
+    font-size: 1.5rem;
+  }
+
+  .testimonials p {
+    font-size: 0.95rem;
+  }
+
+  .carrusel-tarjeta {
+    min-height: 350px;
+    padding: 0;
+    min-height: 400px;
+  }
+
+  .carrusel-overlay {
+    padding: 1.5rem;
+    overflow-y: auto;
+    max-height: 100%;
+  }
+
+
+  .carrusel-opinion {
+    font-size: 0.95rem;
+  }
+
+  .carrusel-nombre {
+    font-size: 1rem;
+  }
+
+  .carrusel-empresa {
+    font-size: 0.9rem;
+  }
+}

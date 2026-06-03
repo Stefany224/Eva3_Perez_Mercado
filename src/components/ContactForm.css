@@ -1,0 +1,69 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-grupo label {
+  font-weight: bold;
+  color: var(--azul-oscuro);
+  font-size: 0.95rem;
+}
+
+.form-grupo input,
+.form-grupo select,
+.form-grupo textarea {
+  padding: 0.8rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: var(--font-principal);
+  transition: border-color 0.3s;
+  outline: none;
+}
+
+.form-grupo input:focus,
+.form-grupo select:focus,
+.form-grupo textarea:focus {
+  border-color: var(--azul-principal);
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+}
+
+.form-btn {
+  background-color: var(--azul-principal);
+  color: var(--blanco);
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-btn:hover {
+  background-color: var(--azul-oscuro);
+}
+
+.form-exito {
+  text-align: center;
+  padding: 3rem;
+  color: var(--azul-principal);
+}
+
+.form-exito h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}

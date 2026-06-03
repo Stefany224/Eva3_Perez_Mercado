@@ -1,0 +1,30 @@
+.contact {
+  padding: 5rem 2rem;
+  background-color: var(--blanco);
+}
+
+.contact-contenido {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: var(--azul-principal);
+  margin-bottom: 1rem;
+}
+
+.contact > .contact-contenido > p {
+  color: var(--gris-texto);
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-info {
+  margin-bottom: 2rem;
+  color: var(--gris-texto);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
